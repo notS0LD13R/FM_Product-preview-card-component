@@ -1,0 +1,111 @@
+:root{
+    --Dark_cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    
+    --Very_dark_blue: hsl(212, 21%, 14%);
+    --Dark_grayish_blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+
+}
+
+.Fraunces700{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+}
+.Montserrat500{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    color:var(--Dark_grayish_blue);
+}
+.Montserrat700{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--Cream);
+}
+
+.box{
+    overflow: hidden;
+    margin: 15vh auto;
+    background-color: var(--White);
+    display: flex;
+    width: 40rem;
+    border-radius: 1rem;
+    
+}
+
+
+
+.RText{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    width: 90%;
+    flex-direction: column;
+    gap: 2rem;
+    padding:2.5%;
+}
+.LImage{
+    width: 100%;
+    height: auto;
+}
+
+.LImage img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.Price b{
+    font-size: 2rem;
+    margin-right: 1rem;
+    color: var(--Dark_cyan);
+}
+
+.button{
+    background-color: var(--Dark_cyan);
+    text-align: center;
+    vertical-align: middle;
+    width: 17rem;
+    height: 3.5rem;
+    padding: 1rem 0rem;
+    font-size: 1rem;
+    
+    margin:0 auto;
+    border-radius: 0.5rem;
+}
+
+.button a{
+    text-decoration: none;
+    color: white;
+}
+
+.button:hover{
+    background-color: var(--Very_dark_blue);
+}
+
+@media (max-width:650px){
+    .box{
+        flex-direction: column;
+        width: 90%;
+        margin: 1vh auto;
+    }
+    .LImage img{
+        content: url("images/image-product-mobile.jpg");
+    }
+
+    .RText{
+        gap:1rem;
+    }
+
+}
